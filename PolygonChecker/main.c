@@ -1,8 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdbool.h>
-
 #include "main.h"
 #include "triangleSolver.h"
+#include "rectangle.h"
 
 int side = 0;
 
@@ -17,8 +18,20 @@ int main() {
 		{
 		case 2:
 			printf("Rectangle selected.\n");
+			double pointsX[4];
+			double pointsY[4];
+			//get points from user
+			for (int i = 0; i < 4; i++) {
+				printf("enter a point %d/4: \n", i + 1);
+				scanf("%lf %lf", &pointsX[i], &pointsY[i]);
+			}
+			RECTANGLE rectangle = createRectangle(pointsX, pointsY);
+			if (isRectangle(rectangle))
+				printf("The points make a rectangle \nThe area of the rectangle is: %lf \n", getArea(rectangle));
+			else
+				printf("The shape is not a rectangle \n");
 
-			
+			printf("The perimeter is: %lf", getPerimeter(rectangle));
 			break;
 		case 1:
 			printf_s("Triangle selected.\n");

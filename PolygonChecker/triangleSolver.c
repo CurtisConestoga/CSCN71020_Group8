@@ -2,6 +2,9 @@
 #include <stdbool.h>
 
 #include "triangleSolver.h"
+#include <math.h>
+
+#define PI 3.141592654
 
 char* analyzeTriangle(int side1, int side2, int side3) {
 	char* result = "";
@@ -22,3 +25,15 @@ char* analyzeTriangle(int side1, int side2, int side3) {
 
 	return result;
 }
+/*
+void triangleInsideAngle(int num[3], float angle[3]){
+	int side1 = num[0];
+	int side2 = num[1];
+	int side3 = num[2];
+	
+}
+
+double convert(double radian){
+	return(radian * (180/PI));
+}
+*/

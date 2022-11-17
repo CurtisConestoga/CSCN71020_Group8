@@ -20,17 +20,16 @@ int main() {
 			printf("Rectangle selected.\n");
 			double pointsX[4];
 			double pointsY[4];
-			//get points from user
 			for (int i = 0; i < 4; i++) {
-				printf("enter a point %d/4: \n", i + 1);
+				printf("Enter point no.%d: ", i + 1);
 				scanf("%lf %lf", &pointsX[i], &pointsY[i]);
 			}
+
 			RECTANGLE rectangle = createRectangle(pointsX, pointsY);
 			if (isRectangle(rectangle))
-				printf("The points make a rectangle \nThe area of the rectangle is: %lf \n", getArea(rectangle));
+				printf("These points make a rectangle, the area is %lf \n", getArea(rectangle));
 			else
-				printf("The shape is not a rectangle \n");
-
+				printf("These points do not make a rectangle. ");
 			printf("The perimeter is: %lf", getPerimeter(rectangle));
 			break;
 		case 1:

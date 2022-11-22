@@ -39,9 +39,9 @@ bool isRectangle(RECTANGLE rectangle) {
     }
 }
 double getArea(RECTANGLE rectangle) {
-    return rectangle.L34 * rectangle.L41;
+    return floorf((rectangle.L34 * rectangle.L41)*100) / 100;
 }
 
 double getPerimeter(RECTANGLE rectangle) {
-    return rectangle.L12 + rectangle.L23 + rectangle.L34 + rectangle.L41;
+    return floorf((rectangle.L12 + rectangle.L23 + rectangle.L34 + rectangle.L41)*100) /100;
 }

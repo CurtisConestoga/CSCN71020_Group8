@@ -4,7 +4,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 extern "C" {
 #include "../PolygonChecker/triangleSolver.h";
-#include "../PolygonChecker/triangleSolver.c"
+#include "../PolygonChecker/triangleSolver.c";
 	char* analyzeTriangle(int side1, int side2, int side3);
 	double triAng(int side, int side1, int side2);
 }

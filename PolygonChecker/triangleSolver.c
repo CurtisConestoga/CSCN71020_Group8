@@ -5,9 +5,16 @@
 #include "triangleSolver.h"
 #include <math.h>
 
-#define PI 3.141592654
-#define RADIAN_DEGREES 57.2958
-#define TOTALDEGREES 180
+#define PI 3.141592654 //constant for pi
+#define RADIAN_DEGREES 57.2958 //conversion factor for radians
+#define TOTALDEGREES 180 // sum of degrees of inside angle of triangle
+
+/*CSCN7102022F - Group Project - triangleSolver.c
+*
+* This module contains definitions of the functions used to perform operations related to triangles.
+*
+*/
+
 
 char* analyzeTriangle(int side1, int side2, int side3) {
 	char* result = "";
@@ -28,18 +35,6 @@ char* analyzeTriangle(int side1, int side2, int side3) {
 
 	return result;
 }
-/*
-void triangleInsideAngle(int num[3], float angle[3]){
-	int side1 = num[0];
-	int side2 = num[1];
-	int side3 = num[2];
-	
-}
-
-double convert(double radian){
-	return(radian * (180/PI));
-}
-*/
 
 
 double triAng(int side, int side1, int side2)
@@ -58,43 +53,3 @@ double triAng(int side, int side1, int side2)
 	double angleSum = angle1 + angle2 + angle3;;
 	return round(angleSum);
 }
-
-
-
-char* triChecker(int side, int side1, int side2)
-{
-	char* result = "\nThis is a scalene triangle";
-
-	// Will prepare a result
-
-	
-
-	if (side == side1 && side == side2)
-		result = "\nThis is an equilateral triangle";
-
-	else if ((side == side1 && side != side2) || (side == side2 && side != side1) || (side1 == side2 && side != side1))
-		result = "\nThis is an isosceles triangle";
-
-	else if (side <= 0 || side1 <= 0 || side2 <= 0)
-		result = "\nThis is not a triangle";
-
-	// Print the result, and starts the program again
-	if (result != "\nThis is not a triangle")
-	{
-		printf("%s", result);
-		triAng(side, side1, side2);
-	}
-	else {
-		printf("Not a triangle");
-	}
-
-
-	return result;
-}
-
-
-
-
-
-
-

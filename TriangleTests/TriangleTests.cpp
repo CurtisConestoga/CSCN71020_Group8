@@ -1,6 +1,10 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-
+/*CSCN7102022F - Group Project - triangleTests.cpp
+*
+* This module contains the test suite implementation of the functions related to the triangle functionality of the polygon checker.
+*
+*/
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 extern "C" {
 #include "../PolygonChecker/triangleSolver.h"

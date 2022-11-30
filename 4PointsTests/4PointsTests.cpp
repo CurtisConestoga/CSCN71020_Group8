@@ -2,7 +2,11 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include <stdbool.h>
-
+/*CSCN7102022F - Group Project - 4PointsTests.cpp
+*
+* This module contains the test suite implementation of the functions related to the rectangle functionality of the polygon checker.
+*
+*/
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 extern "C" {
 	#include "../PolygonChecker/rectangle.c"

@@ -4,11 +4,14 @@
 #include "main.h"
 #include "triangleSolver.h"
 #include "rectangle.h"
-
+/*CSCN7102022F - Group Project - main.c
+* 
+* This module contains the main operations of the program, such as interfacing with the user, handling user input and performing operations based on user input.
+*
+*/
 int side = 0;
 
 int main() {
-	printf("Hello");
 	bool continueProgram = true;
 	while (continueProgram) {
 		printWelcome();

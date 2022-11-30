@@ -4,7 +4,11 @@
 #include <math.h>
 #include "rectangle.h"
 
-
+/*CSCN7102022F - Group Project - rectangle.c
+*
+* This module contains the definitions of the functions related to the rectangle implementation of the program.
+*
+*/
 RECTANGLE createRectangle(double pointsX[], double PointsY[]) {
     RECTANGLE newRectangle;
     //set X points

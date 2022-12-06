@@ -4,7 +4,11 @@
 #include <math.h>
 #include "rectangle.h"
 
-
+/*CSCN7102022F - Group Project - rectangle.c
+*
+* This module contains the definitions of the functions related to the rectangle implementation of the program.
+*
+*/
 RECTANGLE createRectangle(double pointsX[], double PointsY[]) {
     RECTANGLE newRectangle;
     //set X points
@@ -136,9 +140,9 @@ bool isRectangle(RECTANGLE rectangle) {
 }
 
 double getArea(RECTANGLE rectangle) {
-    return rectangle.L34 * rectangle.L41;
+    return floorf((rectangle.L34 * rectangle.L41)*100) / 100;
 }
 
 double getPerimeter(RECTANGLE rectangle) {
-    return rectangle.L12 + rectangle.L23 + rectangle.L34 + rectangle.L41;
+    return floorf((rectangle.L12 + rectangle.L23 + rectangle.L34 + rectangle.L41)*100) /100;
 }

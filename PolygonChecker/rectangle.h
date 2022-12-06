@@ -14,3 +14,4 @@ RECTANGLE createRectangle(double pointsX[], double pointsY[]);
 bool isRectangle(RECTANGLE);
 double getArea(RECTANGLE);
 double getPerimeter(RECTANGLE);
+RECTANGLE checkRectangle(double pointsX[], double PointsY[]);
